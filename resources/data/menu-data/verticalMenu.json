@@ -1,0 +1,325 @@
+{
+  "menu": [
+    {
+     "url": "admin/calendar",
+      "name": "Calendar",
+      "icon": "calendar",
+      "slug": "admin-calendar",
+      "role_id": 10
+      
+    },
+	  {
+      "url": "lawyer/calendar",
+       "name": "Calendar",
+       "icon": "calendar",
+       "slug": "",
+       "role_id": 14
+       
+     },
+	   {
+      
+          "url": "admin/user/list",
+          "name": "User",
+          "icon": "user",
+          "slug": "admin-user-list",
+           "role_id": 10
+      
+    },
+    {
+      
+      "url": "lawyer/user/list",
+      "name": "User",
+      "icon": "user",
+      "slug": "",
+       "role_id": 14
+  
+},
+	  
+    {
+      "name": "Dashboards",
+     "url": "/",
+      "badge": "",
+      "badgeClass": "badge badge-light-warning badge-pill ml-auto mr-1",
+      "icon": "home",
+      "slug": "",
+      "role_id": 11
+      
+    },
+     {
+      "name": "Dashboards",
+     "url": "/",
+      "badge": "",
+      "badgeClass": "badge badge-light-warning badge-pill ml-auto mr-1",
+      "icon": "home",
+      "slug": "",
+      "role_id": 12
+      
+    },
+    {
+        "url": "admin/contact",
+        "name": "Contact",
+        "icon": "message-square",
+        "slug": "admin-contact",
+        "role_id": 10
+    },
+    {
+      "url": "lawyer/contact",
+      "name": "Contact",
+      "icon": "message-square",
+      "slug": "admin-contact",
+      "role_id": 14
+  },
+    {
+        "url": "admin/cases",
+        "name": "cases",
+        "icon": "briefcase",
+        "slug": "admin-cases",
+        "role_id": 10
+    
+    },
+    {
+      "url": "lawyer/cases",
+      "name": "cases",
+      "icon": "briefcase",
+      "slug": "admin-cases",
+      "role_id": 14
+  
+  },
+    {
+      "url": "customer/cases",
+      "name": "Cases",
+      "icon": "briefcase",
+      "slug": "component-alert",
+      "role_id": 11
+    
+    },
+    {
+      "url": "customer/email",
+      "name": "Email",
+      "icon": "mail",
+      "slug": "customer-email",
+      "role_id": 11
+    }, 
+    {
+      "url": "lawyer/email",
+      "name": "Email",
+      "icon": "mail",
+      "slug": "customer-email",
+      "role_id": 14
+    }, 
+	  
+	  
+	  
+	  
+    {
+      "url": "customer/invoice",
+      "name": "Invoice",
+      "icon": "file-text",
+      "slug": "",
+      "role_id": 11
+    },
+    {
+      "url": "lawyer/invoice",
+      "name": "Invoice",
+      "icon": "file-text",
+      "slug": "",
+      "role_id": 14
+    },
+    {
+      "url": "partner/cases",
+      "name": "Cases",
+      "icon": "briefcase",
+      "slug": "component-alert",
+      "role_id": 12
+    
+    },
+    {
+      "url": "partner/email",
+      "name": "Email",
+      "icon": "mail",
+      "slug": "customer-email",
+      "role_id": 12
+    }, 
+    {
+      "url": "partner/task",
+      "name": "Task",
+      "icon": "task",
+      "slug": "component-alert",
+      "role_id": 12
+    
+    },
+    {
+      "url": "partner/Calendar",
+      "name": "Calendar",
+      "icon": "calendar",
+      "slug": "customer-email",
+      "role_id": 12
+    }, 
+   
+    {
+      "url": "admin/email",
+      "name": "Email",
+      "icon": "mail",
+      "slug": "admin-email",
+		 "role_id": 10
+    },
+   
+    {
+      "url": "admin/todo",
+      "name": "Todo",
+      "icon": "check-square",
+      "slug": "admin-todo",
+		"role_id": 10
+    },
+    {
+      "url": "lawyer/todo",
+      "name": "Todo",
+      "icon": "check-square",
+      "slug": "admin-todo",
+		"role_id": 14
+    },
+	   {
+      "url": "admin/chat",
+      "name": "Chat",
+      "icon": "message-square",
+      "slug": "admin-chat",
+		"role_id": 10
+    },
+    {
+      "url": "app/calendar",
+      "name": "Calendar",
+      "icon": "calendar",
+      "slug": "admin-calendar"
+    },
+	  
+	 
+    {
+      "url": "app/kanban",
+      "name": "Kanban",
+      "icon": "grid",
+      "slug": "admin-kanban"
+    },
+    {
+      "url": "admin/invoice/list",
+		"name": "Invoice",
+      "icon": "file-text",
+      "slug": "Invoice",
+		"role_id": 10
+     
+    },
+    {
+      "url": "admin/file-manager",
+      "name": "File Manager",
+      "icon": "save",
+      "slug": "admin-file-manager",
+		"role_id": 10
+    },
+    {
+      "url": "lawyer/file-manager",
+      "name": "File Manager",
+      "icon": "save",
+      "slug": "admin-file-manager",
+		"role_id": 14
+    },
+
+      
+        {
+          "url": "admin/account-settings",
+          "name": "Account Settings",
+          "icon": "circle",
+          "slug": "page-account-settings",
+			"role_id": 10
+        },
+	   {
+        "url": "admin/cases",
+        "name": "Email Log",
+        "icon": "mail",
+        "slug": "mail-logs",
+        "role_id": 10
+    
+    },
+	  {
+      "url": "lawyer/cases",
+      "name": "Email Log",
+      "icon": "mail",
+      "slug": "mail-logs",
+      "role_id": 14
+  
+  },
+        {
+          "url": "page/profile",
+          "name": "Profile",
+          "icon": "circle",
+          "slug": "page-profile"
+        },
+        {
+          "url": "page/faq",
+          "name": "FAQ",
+          "icon": "circle",
+          "slug": "page-faq"
+        },
+        {
+          "url": "page/knowledge-base",
+          "name": "Knowledge Base",
+          "icon": "circle",
+          "slug": "page-knowledge-base"
+        },
+        {
+          "url": "page/pricing",
+          "name": "Pricing",
+          "icon": "circle",
+          "slug": "page-pricing"
+        },
+        {
+          "name": "Blog",
+          "icon": "circle",
+          "slug": "",
+          "submenu": [
+            { "url": "page/blog/list", "name": "List", "slug": "page-blog-list" },
+            { "url": "page/blog/detail", "name": "Detail", "slug": "page-blog-detail" },
+            { "url": "page/blog/edit", "name": "Edit", "slug": "page-blog-edit" }
+          ]
+        },
+        {
+         
+        },
+        {
+          "name": "Miscellaneous",
+          "icon": "circle",
+          "slug": "",
+          "submenu": [
+            {
+              "url": "page/coming-soon",
+              "name": "Coming Soon",
+              "slug": "misc-analytics",
+              "newTab": true
+            },
+            {
+              "url": "page/not-authorized",
+              "name": "Not Authorized",
+              "slug": "misc-analytics",
+              "newTab": true
+            },
+            {
+              "url": "page/maintenance",
+              "name": "Maintenance",
+              "slug": "misc-analytics",
+              "newTab": true
+            },
+            {
+              "url": "error",
+              "name": "Error",
+              "slug": "error",
+              "newTab": true
+            }
+          ]
+        }
+      ]
+    }
+    
+   
+   
+    
+    
+  
+
