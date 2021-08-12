@@ -323,27 +323,48 @@ $(function () {
 
   // To open todo list item modal on click of item
   $(document).on('click', '.todo-task-list-wrapper .todo-item', function (e) {
-    newTaskModal.modal('show');
-    addBtn.addClass('d-none');
-    updateBtns.removeClass('d-none');
-    if ($(this).hasClass('completed')) {
-      modalTitle.html(
-        '<button type="button" class="btn btn-sm btn-outline-success complete-todo-item waves-effect waves-float waves-light" data-dismiss="modal">Completed</button>'
-      );
-    } else {
-      modalTitle.html(
-        '<button type="button" class="btn btn-sm btn-outline-secondary complete-todo-item waves-effect waves-float waves-light" data-dismiss="modal">Mark Complete</button>'
-      );
-    }
-    taskTag.val('').trigger('change');
-    var quill_editor = $('#task-desc .ql-editor'); // ? Dummy data as not connected with API or anything else
-    quill_editor[0].innerHTML =
-      'Chocolate cake topping bonbon jujubes donut sweet wafer. Marzipan gingerbread powder brownie bear claw. Chocolate bonbon sesame snaps jelly caramels oat cake.';
-    taskTitle = $(this).find('.todo-title');
-    var $title = $(this).find('.todo-title').html();
+    
+    var action = $(this).attr('action');
+    
+    $.ajax({
+      type:"GET",
+      url :action,
+      success:function(response){
+        var mainDiv =$('#edit-task-modal');
+        mainDiv.html(response);
+        mainDiv.find('#edit-task-modal').modal('show')
+        mainDiv.find('#task-assigned').wrap('<div class="position-relative"></div>')
+        mainDiv.find('#task-assigned').select2({
+          placeholder: 'Unassigned',
+          dropdownParent:  mainDiv.find('#edit-task-modal').parent(),
+          templateResult: assignTask,
+          templateSelection: assignTask,
+          escapeMarkup: function (es) {
+            return es;
+          }
+        });
 
-    // apply all variable values to fields
-    newTaskForm.find('.new-todo-item-title').val($title);
+        mainDiv.find('#task-due-date').flatpickr({
+          dateFormat: 'Y-m-d',
+          defaultDate:  mainDiv.find('#task-due-date').val(),
+          onReady: function (selectedDates, dateStr, instance) {
+            if (instance.isMobile) {
+              $(instance.mobileInput).attr('step', null);
+            }
+          }
+        });
+
+
+     mainDiv.find('#task-tag').wrap('<div class="position-relative"></div>');
+     mainDiv.find('#task-tag').select2({
+      placeholder: 'Select tag'
+    });
+
+    
+      }
+    })
+
+   
   });
 
   // Updating Data Values to Fields

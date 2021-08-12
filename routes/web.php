@@ -172,7 +172,9 @@ Route::group(['prefix' => 'lawyer', 'middleware' => ['auth', 'roles'], 'roles' =
   Route::get('cases', [AppsController::class,'casesApp'])->name('customer-cases');
   Route::post('addEvent',[AddEventController::class,'addEvent'])->name('admin-add-event');
   Route::post('todo',[TodoController::class,'todo'])->name('laywer-add-todo');
-  Route::get('todo/{id}',[TodoController::class,'todoApp'])->name('laywer-get-todo');
+  Route::get('todo/{id}',[TodoController::class,'todo'])->name('laywer-get-todo');
+  Route::get('todo/{id}/eidt',[TodoController::class,'editTodoApp'])->name('laywer-edit-todo');
+  
 
 
 

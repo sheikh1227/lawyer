@@ -23,4 +23,12 @@ class TodoController extends Controller
         return redirect()->back();
         // dd();
     }
+
+
+    public function editTodoApp($id)
+    {
+        $datas = Todo::find($id);
+        return view('content.apps.todo.edit-todo',compact('datas'));
+    
+    }
 }

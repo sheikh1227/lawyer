@@ -73,7 +73,7 @@
   <div class="todo-task-list-wrapper list-group">
     <ul class="todo-task-list media-list" id="todo-task-list">
   @foreach ( $data as $datas )
-      <li class="todo-item" action="todo/{{ $datas->id }}" method="get">
+      <li class="todo-item" action="{{ route('laywer-edit-todo',$datas->id) }}" method="get">
         <div class="todo-title-wrapper">
           <div class="todo-title-area">
             <i data-feather="more-vertical" class="drag-icon"></i>
@@ -148,7 +148,7 @@
                 <option
                   data-img="{{ asset('images/portrait/small/avatar-s-3.jpg') }}"
                   value="Phill Buffer"
-                  selected
+                  
                 >
                   Phill Buffer
                 </option>
@@ -208,11 +208,15 @@
             <button type="button" class="btn btn-outline-danger update-btn d-none" data-dismiss="modal">Delete</button>
           </div>
         </div>
-  {{-- @endforeach --}}
+
 
       </form>
     </div>
   </div>
+</div>
+
+<div  id="edit-task-modal">
+  
 </div>
 <!-- Right Sidebar ends -->
 
